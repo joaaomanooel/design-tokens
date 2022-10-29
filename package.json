@@ -1,0 +1,34 @@
+{
+  "name": "@joaaomanooel/design-tokens",
+  "version": "0.0.1",
+  "main": "index.js",
+  "description": "A package to organize design tokens.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joaaomanooel/design-tokens.git"
+  },
+  "keywords": [
+    "typescript",
+    "npm",
+    "package",
+    "design-tokens"
+  ],
+  "author": "João Manoel <joaamanooel@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joaaomanooel/design-tokens/issues"
+  },
+  "homepage": "https://github.com/joaaomanooel/design-tokens#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.41.0",
+    "@typescript-eslint/parser": "^5.41.0",
+    "eslint": "^8.26.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  }
+}
