@@ -1,10 +1,20 @@
 {
   "name": "@joaaomanooel/design-tokens",
   "version": "0.0.1",
-  "main": "index.js",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm/index.d.ts",
+  "files": [
+    "lib"
+  ],
   "description": "A package to organize design tokens.",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build:cjs": "tsc -p tsconfig.prod.json --module commonjs --outDir ./lib/cjs",
+    "build:esm": "tsc -p tsconfig.prod.json",
+    "clean": "rimraf ./lib",
+    "build": "npm run clean && npm run build:esm && npm run build:cjs",
+    "typecheck": "tsc --project tsconfig.json --noEmit",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -29,6 +39,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-plugin-prettier": "^4.2.1",
     "prettier": "^2.7.1",
+    "rimraf": "^3.0.2",
     "typescript": "^4.8.4"
   }
 }
